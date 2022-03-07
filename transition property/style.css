@@ -1,0 +1,45 @@
+.child{
+    width: 960px;
+}
+.move
+{
+    margin: 2em;
+    padding: 1px 15px;
+    border-radius: 5px;
+    
+    color: white;
+    height: 50px;
+    width: 120px;
+    line-height: 50px;
+    background-color: red;
+    text-align: center;
+    font-size: 12px;
+    transition-property: translate();
+    transition-duration: 3s;
+}
+/* the change starts slow then go faster then finishes slow */
+#ease 
+{
+    transition-timing-function: ease;
+}
+/* the change occurs at the same rate */
+#linear{
+    transition-timing-function: linear;
+}
+/* the change starts slow then go faster before the end */
+#ease-in{
+    transition-timing-function: ease-in;
+}
+/* the change starts fast then slows down before the end */
+#ease-out{
+    transition-timing-function: ease-out;
+}
+/* the change starts slow then go fast then finishes slow */
+#ease-in-out
+{
+    transition-timing-function: ease-in-out;
+}
+.move:hover
+{
+   transform: translate(900px,0);
+}

@@ -1,0 +1,10 @@
+button{
+    height:90px;
+    width:290px;
+    color:white;
+    background-color: blue;
+    transition-duration: 300ms;
+}
+button:hover{
+    background-color: green;
+}
